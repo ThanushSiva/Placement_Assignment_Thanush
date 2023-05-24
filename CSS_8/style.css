@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(19,1fr);
+    margin: 2rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.box {
+    padding: .2rem;
+}
+
+.pink {
+    background-color: #FE9999;
+}
+
+.yellow {
+    background-color: #FEFE02;
+}
+
+.blue {
+    background-color: #33CCCC;
+}
+
+.green {
+    background-color: #65FE65;
+}

@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.container {
+  background-color: aqua;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.header {
+  background-color: blue;
+  padding: 1rem;
+  height: 10vh;
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 24% 74%;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 80vh;
+}
+
+.aside {
+  background-color: green;
+  display: grid;
+  place-items: center;
+}
+
+.article {
+  background-color: orange;
+  display: grid;
+  align-items: end;
+  position: relative;
+}
+
+.article > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.image-container {
+  display: grid;
+  height: 35vh;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.image {
+  background-color: yellow;
+  padding: 1rem;
+  margin: 2rem;
+  display: grid;
+  place-items: center;
+}
